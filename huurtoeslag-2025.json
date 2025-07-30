@@ -1,0 +1,21 @@
+{
+  "huurtoeslag": {
+    "huurgrens": 900.07,
+    "jeugdHuurgrens": 477.20,
+    "vermogensgrensEP": 37395,
+    "vermogensgrensMP": 74790,
+    "kwaliteitskortingsgrens": 477.20,
+    "aftoppingsgrensKlein": 682.96,
+    "aftoppingsgrensGroot": 731.93,
+    "factorA_EP": 0.000000438698,
+    "factorB_EP": 0.000446392665,
+    "minInk_EP": 22700,
+    "minBasishuur_EP": 199.05,
+    "factorA_MP": 0.000000298184,
+    "factorB_MP": -0.001382497146,
+    "minInk_MP": 30450,
+    "minBasishuur_MP": 197.24,
+    "taakstellingsbedrag": -37.14,
+    "maxServiceKosten": 48
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huurtoeslag 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Bereken je huurtoeslag</h1>
+    <form id="huurtoeslagForm">
+      <label>Wat is je maandelijkse huur (incl. servicekosten)?
+        <input type="number" id="rekenhuur" required />
+      </label>
+
+      <label>Inkomen van jou (€)
+        <input type="number" id="inkomen" required />
+      </label>
+
+      <fieldset>
+        <legend>Woon je samen met een toeslagpartner?</legend>
+        <label><input type="radio" name="toeslagpartner" value="ja" /> Ja</label>
+        <label><input type="radio" name="toeslagpartner" value="nee" checked /> Nee</label>
+      </fieldset>
+
+      <div id="partnerinkomen_wrapper" style="display:none">
+        <label>Inkomen van je partner (€)
+          <input type="number" id="partnerinkomen" />
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>Zijn er andere mensen die bij je wonen?</legend>
+        <label><input type="radio" name="extra_inwoners" value="ja" /> Ja</label>
+        <label><input type="radio" name="extra_inwoners" value="nee" checked /> Nee</label>
+      </fieldset>
+
+      <div id="extra_inkomen_wrapper" style="display:none">
+        <label>Inkomen van andere bewoners (€)
+          <input type="number" id="extra_inkomen" />
+        </label>
+      </div>
+
+      <label>Hoeveel spaargeld of vermogen heb je samen (€)
+        <input type="number" id="vermogen" required />
+      </label>
+
+      <fieldset>
+        <legend>Ben je jonger dan 23 jaar?</legend>
+        <label><input type="radio" name="jonger_dan_23" value="ja" /> Ja</label>
+        <label><input type="radio" name="jonger_dan_23" value="nee" checked /> Nee</label>
+      </fieldset>
+
+      <button type="button" id="berekenBtn">Toon mijn huurtoeslag</button>
+    </form>
+
+    <section id="resultaat"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
